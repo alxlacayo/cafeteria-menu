@@ -1,0 +1,27 @@
+extends layout
+
+block content
+    div.menu
+        if Object.keys(menu.sections).length > 0
+            h1(class='menu__title heading1', style=`font-size: ${heading1Size}rem`)= menuTitle
+
+            div.menu__sections
+                for section in menu.sections
+                    div.menu__section
+                        include components/menu-section-heading
+
+                        ul
+                            for item in section.items
+                                if menu.isDinnerMenu
+                                    include components/menu-dinner-item
+                                else
+                                    include components/menu-lunch-item
+
+                        if menu.isDinnerMenu && section.title === 'Entrees'
+                            span.menu__section-note= entreesSectionNote
+
+            if !menu.isDinnerMenu
+                include components/menu-key
+
+        else
+            span.heading2 No menu to display

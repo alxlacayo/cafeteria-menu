@@ -1,0 +1,26 @@
+- var month = menu.date.toLocaleDateString('en-US', { month: 'short' })
+- var dayOfWeek = menu.date.toLocaleDateString('en-US', { weekday: 'short' })
+- var dayOfMonth = menu.date.getDate()
+- var menuTitle = `${dayOfWeek}, ${month} ${dayOfMonth}`
+- var heading1Size = parseInt(settings.heading1Size, 10) / 10 || 14
+- var heading2Size = parseInt(settings.heading2Size, 10) / 10 || 5.8
+- var heading3Size = parseInt(settings.heading3Size, 10) / 10 || 3
+- var bodySize = parseInt(settings.bodySize, 10) / 10 || 3.0
+- var pageBgColor = `#${settings.pageBgColor || 'FFF2E2'}`
+- var entreesSectionNote = settings.entreesSectionNote || '(Includes two sides and fountain drink)'
+- var redPortionKeyText = settings.redPortionKeyText || 'Eat small portions'
+- var blackPortionKeyText = settings.blackPortionKeyText || 'Eat in moderation'
+- var redPortionColor = `#${settings.redPortionColor || 'FF4242'}`
+- var blackPortionColor = `#${settings.blackPortionColor || '000000'}`
+
+doctype html
+html
+    head
+        meta(charset='UTF-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1.0')
+        title Menu
+        link(rel='stylesheet', href='https://use.typekit.net/hpa2lmq.css')
+        link(rel='stylesheet', href='/stylesheets/style.css')
+        link(rel='shortcut icon', href='#')
+    body(style=`background: ${pageBgColor}`)
+        block content

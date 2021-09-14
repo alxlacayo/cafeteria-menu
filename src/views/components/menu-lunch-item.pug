@@ -1,0 +1,7 @@
+li.menu__li
+    span.heading2= item.name
+    case item.portion.toLowerCase()
+        when 'red'
+            include menu-key-red-icon
+        when 'black'
+            include menu-key-black-icon

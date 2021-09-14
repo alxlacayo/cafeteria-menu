@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-family: neue-haas-grotesk-text, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 3rem;
+    line-height: 1.5;
+    color: #000000;
+    background: #FFF2E2;
+}
+
+.menu {
+    margin: auto;
+    padding: 4.8rem 0;
+    text-align: center;
+}
+
+h1 {
+    margin: 0 0 3.2rem 0;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.heading1 {
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 13.2rem;
+    line-height: 1.2;
+    letter-spacing: -0.28rem;
+}
+
+.heading2 {
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 5.8rem;
+    line-height: 1.12;
+    text-align: center;
+}
+
+.heading3 {
+    font-style: italic;
+    font-size: 2.6rem;
+    letter-spacing: 0.9rem;
+    text-transform: uppercase;
+    text-decoration-line: underline;
+}
+
+.menu__date {
+    display: inline-block;
+    margin-bottom: 0.8rem;
+}
+
+.menu__title {
+    margin-bottom: 4.8rem;
+}
+
+.menu__section-heading {
+    display: inline-block;
+    margin-bottom: 1.6rem;
+}
+
+.menu__section {
+    margin-bottom: 4rem;
+}
+
+.menu__section:last-child {
+    margin-bottom: 0;
+}
+
+.menu__section-note {
+    margin-top: 0.8rem;
+    display: inline-block;
+}
+
+.menu__li {
+    display: flex;
+    align-items: center;
+}
+
+.menu__li svg {
+    margin-left: 2.4rem;
+}
+
+.menu__key {
+    display: flex;
+    justify-content: center;
+    margin-top: 8rem;
+}
+
+.menu__key-item {
+    display: flex;
+}
+
+.menu__key-item:first-child {
+    margin-right: 5.6rem;
+}
+
+.menu__key-item svg {
+    margin-right: 2.4rem;
+}
+
+.no-letter-spacing {
+    letter-spacing: normal;
+}
