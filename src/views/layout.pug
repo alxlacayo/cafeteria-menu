@@ -6,7 +6,7 @@
 - var heading2Size = parseInt(settings.heading2Size, 10) / 10 || 5.8
 - var heading3Size = parseInt(settings.heading3Size, 10) / 10 || 3
 - var bodySize = parseInt(settings.bodySize, 10) / 10 || 3.0
-- var pageBgColor = `#${settings.pageBgColor || 'FFF2E2'}`
+- var pageBgColor = settings.pageBgColor ? settings.pageBgColor === 'transparent' ? 'transparent' : `#${settings.pageBgColor}` : '#FFF2E2'
 - var entreesSectionNote = settings.entreesSectionNote || '(Includes two sides and fountain drink)'
 - var redPortionKeyText = settings.redPortionKeyText || 'Eat small portions'
 - var blackPortionKeyText = settings.blackPortionKeyText || 'Eat in moderation'
