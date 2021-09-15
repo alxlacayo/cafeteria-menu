@@ -1,5 +1,5 @@
 li.menu__li
-    span.heading2= item.name
+    span.heading2(style=`font-size: ${heading2Size}rem`)= item.name
     case item.portion.toLowerCase()
         when 'red'
             include menu-key-red-icon
