@@ -40,7 +40,7 @@ app.use((req, res, next) => {
 app.use((err, req, res, next) => {
     logger.error(`${req.method} - ${err.message} - ${err.stack}  - ${req.originalUrl} - ${req.ip}`);
 
-    let error = req.app.get('env') !== 'development'
+    let error = req.app.get('env') === 'production'
         ? `${err.name}: ${err.message}`
         : err.stack;
 
