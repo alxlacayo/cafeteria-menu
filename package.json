@@ -4,8 +4,8 @@
     "private": true,
     "type": "module",
     "scripts": {
-        "dev": "nodemon -r dotenv/config ./src/bin/www.js",
-        "start": "pm2 start ecosystem.config.cjs",
+        "dev": "NODE_ENV=development nodemon -r dotenv/config ./src/server.js",
+        "prod": "NODE_ENV=production nodemon -r dotenv/config ./src/server.js",
         "test": "nodemon -r dotenv/config --experimental-vm-modules ./node_modules/jest/bin/jest.js --coverage"
     },
     "dependencies": {
